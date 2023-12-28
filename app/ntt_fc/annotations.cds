@@ -1,0 +1,1 @@
+using PlayersService as service from '../../srv/nttfc-service';
