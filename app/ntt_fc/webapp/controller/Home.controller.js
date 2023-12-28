@@ -102,12 +102,12 @@ sap.ui.define([
                 oEditData.name = NameEdit
                 oEditData.height = HeightEdit
                 oEditData.age = AgeEdit
-                this.getView().getModel().update("Players('" + IDEdit + "')",
+                this.getView().getModel().update("mainModel>/Players('" + IDEdit + "')",
                 oEditData,{ method:"PUT", success:function (odata, Response){
                     if (odata !== "" || odata !== undefined) {
                         MessageBox.success("Updated successfully.");
                     } else {
-                        MessageBox.error("Not updated.");
+ //                       MessageBox.error("Not updated.");
                     }
                 },
                 error: function (odata){
